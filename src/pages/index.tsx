@@ -34,8 +34,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <ImgSwiper />
+        {/* <ImgSwiper /> */}
         <ImgSwiper isBottom={true} />
+        {/* <ImgSwiper /> */}
+        {/* <ImgSwiper isBottom={true} /> */}
 
         <div className="secondPage">
           <div className="title">一：99元定金好礼</div>

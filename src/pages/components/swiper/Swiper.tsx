@@ -50,7 +50,25 @@ export default function ImgSwiper(props: IProps) {
       >
         {imgList.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="h-[150px]">
+            <div className={styles.itemWrap}>
+              <img
+                // src={imgList[index % imgList.length]}
+                src={LogoSrc}
+                className={styles.imgItem}
+              />
+
+              <img
+                // src={imgList[index % imgList.length]}
+                src={LogoSrc}
+                className={styles.imgItem}
+              />
+
+              <img
+                // src={imgList[index % imgList.length]}
+                src={LogoSrc}
+                className={styles.imgItem}
+              />
+
               <img
                 // src={imgList[index % imgList.length]}
                 src={LogoSrc}
