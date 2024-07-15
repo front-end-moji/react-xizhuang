@@ -1,9 +1,12 @@
 import LogoSrc from "@/assets/logo.jpg";
+import ClothSrc from "@/assets/cloth.jpg";
+import EnvSrc from "@/assets/huanjing_1.jpg";
 import "./index.css";
 import Button from "./components/button";
 import { CommentOutlined, BarcodeOutlined } from "@ant-design/icons";
 import CountDown from "./components/countDown";
 import ImgSwiper from "./components/swiper/Swiper";
+import Logo from "./components/logo";
 
 export default function HomePage() {
   return (
@@ -36,30 +39,104 @@ export default function HomePage() {
         </div>
         {/* <ImgSwiper /> */}
         <ImgSwiper isBottom={true} />
-        {/* <ImgSwiper /> */}
-        {/* <ImgSwiper isBottom={true} /> */}
 
         <div className="secondPage">
-          <div className="title">一：99元定金好礼</div>
-          <div className="partOne">
-            <div className="line"> 1、价值 1680元定制衬衣 </div>
-            <div className="line"> 2、价值 1280 元定制皮鞋 </div>
-            <div className="line"> 3、价值 980 元配饰礼盒 </div>
-            <div className="line"> 4、价值 2000 元 VICHI 消费卡 </div>
-            <div className="line"> 5、价值 580 元 VICHI BAR 酒水券 </div>
+          <div className="pageLogo">
+            <Logo />
+          </div>
+          <div className="title">定制西服可享</div>
+          <div className="partOneDetail">
+            <div className="depositCount">99</div>
+            <div className="partOneText">翻</div>
+            <div className="multiple">60</div>
+            <div className="multipleText">倍</div>
+          </div>
+          <div className="desc">获取6980元超值礼包</div>
+          <div className="clothImg">
+            <img src={ClothSrc} alt="" />
+          </div>
+          <div className="descText">数量有限，订完截止</div>
+        </div>
+
+        <div className="thirdPage">
+          <div className="title">1</div>
+          <div className="title">定制衬衣</div>
+          <div className="price">
+            价值<span>1280</span>元
+          </div>
+          <div className="clothImg">
+            <img src={ClothSrc} alt="" />
           </div>
         </div>
 
         <div className="thirdPage">
-          <div className="title">二：推荐有礼</div>
-          <div className="partOne">
-            <div className="line"> 1、推荐3人，赠送价值 1680 元定制衬衣 </div>
-            <div className="line">2、推荐5人，赠送价值 2000 元VICHI消费卡 </div>
+          <div className="title">2</div>
+          <div className="title">定制皮鞋</div>
+          <div className="price">
+            价值<span>1280</span>元
+          </div>
+          <div className="clothImg">
+            <img src={ClothSrc} alt="" />
+          </div>
+        </div>
+
+        <div className="thirdPage">
+          <div className="title">3</div>
+          <div className="title">配饰礼盒</div>
+          <div className="price">
+            价值<span>1280</span>元
+          </div>
+          <div className="clothImg">
+            <img src={ClothSrc} alt="" />
+          </div>
+        </div>
+
+        <div className="thirdPage">
+          <div className="title">4</div>
+          <div className="title">消费卡</div>
+          <div className="price">
+            价值<span>1280</span>元
+          </div>
+          <div className="clothImg">
+            <img src={ClothSrc} alt="" />
+          </div>
+        </div>
+
+        <div className="thirdPage">
+          <div className="title">5</div>
+          <div className="title">酒水券</div>
+          <div className="price">
+            价值<span>1280</span>元
+          </div>
+          <div className="clothImg">
+            <img src={ClothSrc} alt="" />
           </div>
         </div>
 
         <div className="fourthPage">
-          <div className="title">三：转发点赞</div>
+          <div className="pageLogo">
+            <Logo />
+          </div>
+          <div className="title">推荐有礼</div>
+          <div className="huanjing">
+            <img src={EnvSrc} alt="" />
+          </div>
+          <div className="partOne">
+            <div className="line">1、点赞58位，赠送价值580元 ViCHI 酒水券 </div>
+            <div className="line">
+              2、点赞88位，赠送价值2000元 VICHI 消费卡{" "}
+            </div>
+          </div>
+        </div>
+
+        <div className="fourthPage fivePage">
+          <div className="pageLogo">
+            <Logo />
+          </div>
+          <div className="title">转发点赞</div>
+          <div className="huanjing">
+            <img src={EnvSrc} alt="" />
+          </div>
           <div className="partOne">
             <div className="line">1、点赞58位，赠送价值580元 ViCHI 酒水券 </div>
             <div className="line">

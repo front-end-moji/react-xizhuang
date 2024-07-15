@@ -220,6 +220,11 @@
 .title {
   font-size: 40px;
   margin-bottom: 20px;
+  color: #c3a97e;
+}
+
+.pageLogo {
+  margin-bottom: 20px;
 }
 
 .line {
@@ -228,19 +233,112 @@
 
 .secondPage,
 .thirdPage,
+.fourthPage,
 .fourthPage {
-  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0 16px;
+  padding-top: 80px;
   box-sizing: border-box;
   background: black;
+  border: 1px solid black;
+}
+
+.fivePage {
+  padding-bottom: 64px;
 }
 
 .fourthPage {
-  padding-bottom: 64px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.fourthPage .huanjing {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.fourthPage .huanjing img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.partOneDetail {
+  display: flex;
+  align-items: baseline;
+}
+
+.depositCount {
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 1px #c3a97e;
+}
+
+.partOneText {
+  width: 40px;
+  height: 40px;
+  background-color: #c3a97e;
+  color: #000;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px;
+}
+
+.multiple {
+  font-size: 70px;
+  font-weight: bold;
+  color: #ffebcd;
+  text-shadow: 4px 4px 0 #c3a97e;
+}
+
+.multipleText {
+  font-size: 16px;
+  color: #c3a97e;
+  font-weight: bold;
+}
+
+.clothImg {
+  height: 300px;
+}
+
+.clothImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.descText {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 40px;
+}
+
+.price span {
+  color: #c3a97e;
+  font-weight: bold;
+}
+
+.desc {
+  width: 100%;
+  height: 36px;
+  background-color: #264939;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 22px;
 }
 
 .register {
