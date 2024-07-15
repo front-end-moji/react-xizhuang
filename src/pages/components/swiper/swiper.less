@@ -1,0 +1,53 @@
+.homeSwiperWrap {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  user-select: none;
+  height: 42px;
+  margin: 16px;
+
+  :global {
+    .swiper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 40px;
+      padding: 0 5px;
+      height: 42px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+
+    .root {
+      :global {
+        .adm-swiper-slide {
+          transform: scale(0.6);
+          transition: all 0.3s;
+        }
+
+        .adm-swiper-slide-active {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .imgItem {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+}

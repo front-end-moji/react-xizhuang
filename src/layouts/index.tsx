@@ -1,11 +1,10 @@
-import { Link, Outlet } from "umi";
-import styles from "./index.less";
+import { Outlet } from "umi";
 import "./normalize.css";
 
 export default function Layout() {
   return (
-    <div className={styles.navs}>
+    <>
       <Outlet />
-    </div>
+    </>
   );
 }
